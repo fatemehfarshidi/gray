@@ -144,34 +144,6 @@ void sort(struct node **head)
     }
 }
 
-char Map[10][20] =
-{
-	 "[      screen     ]",
-	 "a 1 2 3 4 5 6 7 8 |",
-	 "b 1 2 3 4 5 6 7 8 |",
-	 "c 1 2 3 4 5 6 7 8 |",
-	 "d 1 2 3 4 5 6 7 8 |",
-	 "e 1 2 3 4 5 6 7 8 |",
-	 "f 1 2 3 4 5 6 7 8 |",
-	 "g 1 2 3 4 5 6 7 8 |",
-	 "_______exit________"
-};
-
-void showMap()
-{
-	int x;
-    for (x = 0; x < 10; x++)
-    {
-    	int y;
-        for(y = 0; y < 20; y++)
-        {
-            printf("%c" , Map[x][y]);
-        }
-        printf("\n");
-    }
-}
-
-
 int main(){
     struct node *head = NULL;
     time_t rawtime;
